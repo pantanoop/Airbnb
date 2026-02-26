@@ -1,0 +1,157 @@
+
+.header {
+  background: #f7f7f7;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+
+.navbar {
+  height: 110px;
+  padding: 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.navbar__logo {
+  height: 82px;
+  cursor: pointer;
+}
+
+
+.navbar__center {
+  display: flex;
+  margin-left:150px;
+  gap: 50px;
+  align-items: center;
+}
+
+
+.nav__item {
+  display: flex;                 
+  align-items: center;           
+  gap: 6px;                      
+
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav__item img {
+  width: 70px;                   
+  height: 70px;                  
+  object-fit: contain;         
+}
+
+.nav__item.active {
+  border-bottom: 2px solid black;
+  padding-bottom: 6px;
+  font-weight: 550;
+}
+
+
+.nav__item span:hover{
+  /* font-weight:1000px; */
+  font-weight:bolder;
+  color:black;
+  /* color:black; */
+}
+
+.new {
+  font-size: 10px;
+  background: black;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 8px;
+  margin-left: 6px;
+}
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon__circle {
+  width: 36px;
+  height: 36px;
+  background: #ebebeb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu__box {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  border-radius: 24px;
+  background: white;
+}
+
+
+.search__wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.search__bar {
+  background: white;
+  border-radius: 40px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  height: 50px;
+  width: 800px;
+
+  display: flex;
+  align-items: center;
+
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+
+  gap: 72px;
+}
+
+
+.search__item {
+  padding: 0 20px;
+}
+
+
+.search__item span {
+  font-size: 15px;
+  font-weight: 550;
+}
+
+.search__item p {
+  font-size: 15px;
+  color: #717171;
+}
+
+
+.divider {
+  width: 1px;
+  height: 32px;
+  background: #ddd;
+}
+
+.search__icon {
+  background: #ff385c;
+  color: white;
+  margin-right:10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: auto;         
+}
+
+
+
+

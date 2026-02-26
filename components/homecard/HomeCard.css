@@ -1,0 +1,103 @@
+.home_section {
+  padding: 40px 35px;
+  background-color: #fff;
+}
+
+.home_section_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.home_section_title {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.home_section_nav {
+  display: flex;
+  gap: 10px;
+}
+
+.nav_circle_btn {
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #222;
+}
+
+.home_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.card_img_wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #f3f3f3;
+}
+
+.card_img {
+  width: 100%;
+  height: 100%;
+}
+
+.guest_fav_badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.heart_icon_btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
+}
+
+.card_content {
+  margin-top: 12px;
+}
+
+.card_location_text {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #222;
+}
+
+.card_price_text {
+  color: #717171;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+
+.card_rating_row {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
