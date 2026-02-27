@@ -41,8 +41,37 @@
 .nav__item img {
   width: 70px;                   
   height: 70px;                  
-  object-fit: contain;         
+  object-fit: contain;     
+   /* filter: invert(100%); */
+
 }
+
+@keyframes vibrate {
+  0% { transform: translate(0) scale(1.1) ;  }
+  20% { transform: translate(-0.5px, 0.5px) scale(1.1); }
+  40% { transform: translate(-0.5px, -0.5px) scale(1.1); }
+  60% { transform: translate(0.5px, 0.5px) scale(1.1); }
+  80% { transform: translate(0.5px, -0.5px) scale(1.1); }
+  100% { transform: translate(0) scale(1.1); }
+}
+
+@keyframes spin {
+  0% {
+    /* Start at no rotation */
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  100% {
+    /* End with a full 360-degree rotation on both axes */
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+.nav__item img:hover {
+  /* animation: vibrate 0.3s linear infinite;
+   */
+     animation: spin 5s infinite linear;
+}
+
 
 .nav__item.active {
   border-bottom: 2px solid black;

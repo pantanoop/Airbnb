@@ -4,8 +4,19 @@ import "./Navbar.css";
 import LanguageIcon from "@mui/icons-material/Language";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsSticky(window.scrollY > 60); // adjust threshold
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <header className="header">
       <div className="navbar">
@@ -19,12 +30,12 @@ export default function Navbar() {
 
         <div className="navbar__center">
           <div className="nav__item active">
-            <img src="/home.avif" alt="homes" />
+            <img src="/House.png" alt="homes" />
             <span>Homes</span>
           </div>
 
           <div className="nav__item">
-            <img src="/ballon.avif" alt="experiences" />
+            <img src="/ballon-3d.png" alt="experiences"  />
             <span>
               Experiences <span className="new">NEW</span>
             </span>
